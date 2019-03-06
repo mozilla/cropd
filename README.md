@@ -24,3 +24,11 @@ const cropper = crop(targetElement, {
 // When you want to extract the cropped region
 cropper.toDataURL();
 ```
+
+## TODO
+
+- wrappers for:
+  - Vue
+  - React
+  - Svelte
+- finish Lerna setup
