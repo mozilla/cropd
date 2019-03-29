@@ -4,7 +4,7 @@
   import Handle from './handle.svelte';
 
   const MIN_SCALE = 50;
-  const ONE_THIRD = (100 / 3) + '%';
+  const ONE_THIRD = 100 / 3 + '%';
 
   export let src = '';
 
@@ -59,7 +59,11 @@
     const isYFlip = key.includes('n');
     const diff =
       (isXResize ? (isXFlip ? -1 : 1) * x : (isYFlip ? -1 : 1) * y) * 2;
-    const newScale = Math.max(scale + diff * 0.5, MIN_SCALE);
+    const newScale = Math.min(
+      Math.max(scale + diff * 0.5, MIN_SCALE),
+      width,
+      height
+    );
     if (scale !== newScale) {
       scale = newScale;
       move({
