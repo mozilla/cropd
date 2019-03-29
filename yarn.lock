@@ -701,10 +701,10 @@
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"
   integrity sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
 
-"@types/node@^11.9.5":
-  version "11.10.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.10.4.tgz#3f5fc4f0f322805f009e00ab35a2ff3d6b778e42"
-  integrity sha512-wa09itaLE8L705aXd8F80jnFpxz3Y1/KRHfKsYL2bPc0XF+wEWu8sR9n5bmeu8Ba1N9z2GRNzm/YdHcghLkLKg==
+"@types/node@^11.11.6":
+  version "11.12.1"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.12.1.tgz#d90123f6c61fdf2f7cddd286ddae891586dd3488"
+  integrity sha512-sKDlqv6COJrR7ar0+GqqhrXQDzQlMcqMnF2iEU6m9hLo8kxozoAGUazwPyELHlRVmjsbvlnGXjnzyptSXVmceA==
 
 JSONStream@^1.0.4, JSONStream@^1.3.4:
   version "1.3.5"
@@ -1651,11 +1651,6 @@ esprima@^4.0.0:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/esprima/-/esprima-4.0.1.tgz#13b04cdb3e6c5d19df91ab6987a8695619b0aa71"
   integrity sha512-eGuFFw7Upda+g4p+QHvnW0RyTX/SVeJBDM/gCtMARO0cLuT2HcEKnTPvhjV6aGeqrCB/sbNop0Kszm0jsaWU4A==
-
-estree-walker@^0.5.2:
-  version "0.5.2"
-  resolved "https://registry.yarnpkg.com/estree-walker/-/estree-walker-0.5.2.tgz#d3850be7529c9580d815600b53126515e146dd39"
-  integrity sha512-XpCnW/AE10ws/kDAs37cngSkvgIR8aN3G0MS85m7dUpuK2EREo9VJ00uvw6Dg/hXEpfsE1I1TvJOJr+Z+TL+ig==
 
 estree-walker@^0.6.0:
   version "0.6.0"
@@ -2840,7 +2835,7 @@ macos-release@^2.0.0:
   resolved "https://registry.yarnpkg.com/macos-release/-/macos-release-2.0.0.tgz#7dddf4caf79001a851eb4fba7fb6034f251276ab"
   integrity sha512-iCM3ZGeqIzlrH7KxYK+fphlJpCCczyHXc+HhRVbEu9uNTCrzYJjvvtefzeKTCVHd5AP/aD/fzC80JZ4ZP+dQ/A==
 
-magic-string@^0.25.1:
+magic-string@^0.25.2:
   version "0.25.2"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.2.tgz#139c3a729515ec55e96e69e82a11fe890a293ad9"
   integrity sha512-iLs9mPjh9IuTtRsqqhNGYcZXGei0Nh/A4xirrsqW7c+QhKVFL2vm7U09ru6cHRD22azaP/wMDgI+HCqbETMTtg==
@@ -4002,15 +3997,15 @@ rimraf@2, rimraf@^2.5.4, rimraf@^2.6.2:
   dependencies:
     glob "^7.1.3"
 
-rollup-plugin-commonjs@^9.2.0:
-  version "9.2.1"
-  resolved "https://registry.yarnpkg.com/rollup-plugin-commonjs/-/rollup-plugin-commonjs-9.2.1.tgz#bb151ca8fa23600c7a03e25f9f0a45b1ee922dac"
-  integrity sha512-X0A/Cp/t+zbONFinBhiTZrfuUaVwRIp4xsbKq/2ohA2CDULa/7ONSJTelqxon+Vds2R2t2qJTqJQucKUC8GKkw==
+rollup-plugin-commonjs@^9.2.2:
+  version "9.2.2"
+  resolved "https://registry.yarnpkg.com/rollup-plugin-commonjs/-/rollup-plugin-commonjs-9.2.2.tgz#4959f3ff0d9706c132e5247b47ab385f11d9aae6"
+  integrity sha512-FXBgY+IvZIV2AZVT/0CPMsP+b1dKkxE+F6SHI9wddqKDV9KCGDA2cV5e/VsJLwXKFgrtliqMr7Rq3QBfPiJ8Xg==
   dependencies:
-    estree-walker "^0.5.2"
-    magic-string "^0.25.1"
+    estree-walker "^0.6.0"
+    magic-string "^0.25.2"
     resolve "^1.10.0"
-    rollup-pluginutils "^2.3.3"
+    rollup-pluginutils "^2.5.0"
 
 rollup-plugin-node-resolve@^4.0.1:
   version "4.0.1"
@@ -4048,13 +4043,21 @@ rollup-pluginutils@^2.3.3:
     estree-walker "^0.6.0"
     micromatch "^3.1.10"
 
-rollup@^1.2.2:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.4.1.tgz#cc03ef6fb49dd72a878e3da0131c0a3696de14a7"
-  integrity sha512-YWf5zeR6SWtqZmCnuYs4a+ZJetj8NT4yfBMPXekWHW4L3144jM+J2AWagQVejB0FwCqjEUP9l8o4hg1rPDfQlg==
+rollup-pluginutils@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/rollup-pluginutils/-/rollup-pluginutils-2.5.0.tgz#23be0f05ac3972ea7b08fc7870cb91fde5b23a09"
+  integrity sha512-9Muh1H+XB5f5ONmKMayUoTYR1EZwHbwJJ9oZLrKT5yuTf/RLIQ5mYIGsrERquVucJmjmaAW0Y7+6Qo1Ep+5w3Q==
+  dependencies:
+    estree-walker "^0.6.0"
+    micromatch "^3.1.10"
+
+rollup@^1.7.4:
+  version "1.7.4"
+  resolved "https://registry.yarnpkg.com/rollup/-/rollup-1.7.4.tgz#dd9d1d4935d3db38f16e1caaef635d8d1b0831c4"
+  integrity sha512-nc86fETLHdozhRWlW/uNVIQ7ODuA1vU2/L8znAxP9TNMx1NA6GTth3llqoxxCle2kkyui+OfGzbKaQxD60NJjA==
   dependencies:
     "@types/estree" "0.0.39"
-    "@types/node" "^11.9.5"
+    "@types/node" "^11.11.6"
     acorn "^6.1.1"
 
 run-async@^2.2.0:
@@ -4504,10 +4507,10 @@ supports-color@^6.1.0:
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-2.16.1.tgz#559a68452029e72280311ccc8dfd2ff10d0a5f18"
   integrity sha512-TpXdfukSkmWkMnH6PPVm7FRW8SSFcTyqBiP+6VN8rtZJ7Lp1Xbf/e3oz73eQBxF0UPZw1aAn1b91lX2XTeD3zg==
 
-svelte@^3.0.0-beta.7:
-  version "3.0.0-beta.10"
-  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.0.0-beta.10.tgz#ac21dd794b93d304ed4cdf56ff67e0ee55708d6a"
-  integrity sha512-PDA034OwoMwna9+L99QVN/g9fodfxne3+wWaKph4WmcDDn0cAYRzTgu1h8WfAKK7tyt1iTcOBxKP9y+jonJ0/g==
+svelte@^3.0.0-beta.21:
+  version "3.0.0-beta.21"
+  resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.0.0-beta.21.tgz#2e24409a2b2351153f8a46baae9b389c9121a036"
+  integrity sha512-TlYvRrwnA9SeoNwxD1nv6kzQO/KxPGISyaJrzizt1kEBSKEdY4rB9U1URDfpMtdAKdYJkeXXca4Tt6FWAyS5Ng==
 
 tar@^2.0.0:
   version "2.2.1"
