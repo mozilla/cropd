@@ -4,7 +4,7 @@
   import Handle from './handle.svelte';
 
   const MIN_SCALE = 50;
-  const ONE_THIRD = `${100 / 3}%`;
+  const ONE_THIRD = (100 / 3) + '%';
 
   export let src = '';
 

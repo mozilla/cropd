@@ -34,4 +34,6 @@
 <Draggable
   style={'width: 40%; height: 40%;' + style}
   on:drag={event => dispatch('resize', {offset: event.detail, key: HANDLE_DIRECTIONS[n]})}
-/>
+>
+  <div style={'width: 100%; height: 100%; box-sizing: border-box;' + style + 'border-color: black; border-width: 2px;'}></div>
+</Draggable>
