@@ -5,6 +5,10 @@
     "packages/*"
   ],
   "devDependencies": {
+    "concurrently": "^4.1.0",
     "lerna": "^3.13.1"
+  },
+  "scripts": {
+    "start": "concurrently --kill-others \"cd packages/cropd && yarn autobuild\" \"cd demo && yarn dev\""
   }
 }

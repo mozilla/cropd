@@ -28,13 +28,7 @@ cropper.toDataURL();
 ## Development
 
 ```bash
-yarn
-cd packages/cropd
-# run this in background (e.g. with screen) or open a 2nd bash after this
-yarn autobuild
-
-cd demo
-yarn dev
+yarn start
 ```
 
 ## TODO
