@@ -12,6 +12,7 @@
   let lastY = null;
 
   function dragStart(event) {
+    event.preventDefault();
     event.stopImmediatePropagation();
     active = true;
   }
