@@ -1,6 +1,6 @@
 {
   "name": "cropd",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/cropd.js",
   "devDependencies": {
     "prettier-plugin-svelte": "^0.3.0",
