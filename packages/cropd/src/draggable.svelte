@@ -55,7 +55,7 @@
 />
 <div
   bind:this={root}
-  style={style}
+  style={style + 'touch-action: none;'}
   on:touchstart={dragStart}
   on:mousedown={dragStart}
 >
