@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "dependencies": {
-    "cropd": "1.0.2"
+    "cropd": "1.0.3"
   },
   "devDependencies": {
     "npm-run-all": "^4.1.5",
